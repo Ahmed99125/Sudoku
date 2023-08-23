@@ -30,7 +30,7 @@ int main() {
         std::cout << "\nDo you want to play again?\npress Y to play again and N to exit.\n";
         std::cin >> c;
         c = tolower(c);
-        Game::fails = 0;
+        Game::fails = Game::tries = 0;
         delete board;
         delete game;
     } while (c == 'y');
